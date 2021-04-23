@@ -1,6 +1,6 @@
-import compute from "../Utilities/compute"
-import sdgs from "../Constants/sdgs"
-import industries from "../Constants/industries"
+import compute from "../../Utilities/compute"
+import sdgs from "../../Constants/sdgs"
+import industries from "../../Constants/industries"
 
 
 export default class certificateModel {
