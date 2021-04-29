@@ -36,3 +36,9 @@ create table companies_temp
     companyID   integer primary key autoincrement,
     name        varchar(100)
 );
+
+
+alter TABLE companies_temp add COLUMN newsLastFetched datetime;
+
+
+update companies_temp set newsLastFetched = date('now') where companyID = 1;

@@ -6,6 +6,7 @@ insert into companies_temp (name)  values ('Apple'),('Intel'),('Google'),('Micro
 
 
 
+
 insert into article_company (articleID, companyID) values ()
 
 select * from source_types;
@@ -34,3 +35,6 @@ update sources set url = "www.apple.com" where sourceID = 1
 select sourceID,name,url from sources
 
 alter table sources rename column url to source_url
+
+
+SELECT a.articleID,a.url,a.sourceID FROM articles a join article_company ac on a.articleID = ac.articleID join article_category acat on acat.articleID = acat.articleID join  sources s on a.sourceID = s.sourceID where ac.companyID = 1 
