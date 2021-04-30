@@ -1,0 +1,22 @@
+{
+  "name": "shared.code",
+  "version": "1.0.0",
+  "description": "shared code of Impakter",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Impakter/SHARED.CODE.git"
+  },
+  "keywords": [
+    "impakter"
+  ],
+  "author": "aravind samala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Impakter/SHARED.CODE/issues"
+  },
+  "homepage": "https://github.com/Impakter/SHARED.CODE#readme"
+}

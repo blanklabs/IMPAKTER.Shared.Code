@@ -1,9 +1,15 @@
+/*
 import compute from "../../Utilities/compute"
 import sdgs from "../../Constants/sdgs"
 import industries from "../../Constants/industries"
+*/
+
+const compute = require("../../Utilities/compute");
+const sdgs = require("../../Constants/sdgs");
+const industries = require("../../Constants/industries");
 
 
-export default class certificateModel {
+class certificateModel {
     mode = ""
     certificateID = null
     organizationID = null
@@ -112,7 +118,7 @@ export default class certificateModel {
                     return item.value == sdg;
                 })
                 this.computedSdgs.push(temp[0])
-                
+
             })
     }
 
@@ -124,7 +130,7 @@ export default class certificateModel {
                     return item.value == industry;
                 })
                 this.computedIndustries.push(temp[0])
-                
+
             })
     }
 
@@ -132,3 +138,4 @@ export default class certificateModel {
 
 }
 
+module.exports = certificateModel
