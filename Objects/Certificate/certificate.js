@@ -1,15 +1,17 @@
-/*
+
 import compute from "../../Utilities/compute"
 import sdgs from "../../Constants/sdgs"
 import industries from "../../Constants/industries"
-*/
 
+
+/*
 const compute = require("../../Utilities/compute");
 const sdgs = require("../../Constants/sdgs");
 const industries = require("../../Constants/industries");
+*/
 
 
-class certificateModel {
+export default class certificateModel {
     mode = ""
     certificateID = null
     organizationID = null
@@ -138,4 +140,4 @@ class certificateModel {
 
 }
 
-module.exports = certificateModel
+//module.exports = certificateModel
