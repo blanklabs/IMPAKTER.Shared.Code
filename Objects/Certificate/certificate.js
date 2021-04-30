@@ -1,7 +1,7 @@
 
-import compute from "../../Utilities/compute"
-import sdgs from "../../Constants/sdgs"
-import industries from "../../Constants/industries"
+import compute from "../../Utilities/compute.js"
+import { sdgs } from "../../Constants/sdgs.js"
+import { industries } from "../../Constants/industries.js"
 
 
 /*

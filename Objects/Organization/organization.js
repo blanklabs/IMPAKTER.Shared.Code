@@ -15,4 +15,5 @@ class organizationModel {
 
 }
 
-module.exports = organizationModel
+export { organizationModel }
+//module.exports = organizationModel
