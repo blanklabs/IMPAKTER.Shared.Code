@@ -2,12 +2,13 @@
   "name": "shared.code",
   "version": "1.0.0",
   "description": "shared code of Impakter",
-  "main": "index.mjs",
+  "main": "./dist/shared.code.js",
+  "type": "module",
   "exports": {
     ".": {
-      "module": "./index.mjs",
-      "require": "./index.mjs",
-      "import": "./index.mjs"
+      "module": "./dist/shared.code.js",
+      "require": "./dist/shared.code.js",
+      "import": "./dist/shared.code.js"
     },
     "./": "./"
   },
