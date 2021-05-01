@@ -1,4 +1,4 @@
-export default {
+module.exports =  {
     entry: './index.mjs',
     output: {
         library: "shared.code",
