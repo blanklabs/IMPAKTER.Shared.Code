@@ -10,39 +10,41 @@ const sdgs = require("../../Constants/sdgs");
 const industries = require("../../Constants/industries");
 */
 
-
 export default class certificateModel {
-    mode = ""
-    certificateID = null
-    organizationID = null
-    name = ""
-    description = ""
-    priority = null
-    applicationLength = ""
-    imagePath = ""
-    difficulty = null
-    relevance = null
-    validity = null
-    region = null
-    countries = []
-    goal = null
-    rating = "P3"
-    pricing = ""
-    sdgEngagement = ""
-    sdgs = []
-    sdgTargets = []
-    industries = []
-    industrySectors = []
-    activeStatus = true
-    computedPriority = null
-    computedSdgs = []
-    computedIndustries = []
-    documents = null
 
+constructor() {
+        this.mode = ""
+        this.certificateID = null
+        this.organizationID = null
+        this.name = ""
+        this.description = ""
+        this.priority = null
+        this.applicationLength = ""
+        this.imagePath = ""
+        this.difficulty = null
+        this.relevance = null
+        this.validity = null
+        this.region = null
+        this.countries = []
+        this.goal = null
+        this.rating = "P3"
+        this.pricing = ""
+        this.sdgEngagement = ""
+        this.sdgs = []
+        this.sdgTargets = []
+        this.industries = []
+        this.industrySectors = []
+        this.activeStatus = true
+        this.computedPriority = null
+        this.computedSdgs = []
+        this.computedIndustries = []
+        this.documents = null;
+
+}
 
     setOrganizationID(id) {
         this.organizationID = id
-    }
+    };
 
     getCertificatePayload() {
         return {
@@ -135,8 +137,6 @@ export default class certificateModel {
 
             })
     }
-
-
 
 }
 
