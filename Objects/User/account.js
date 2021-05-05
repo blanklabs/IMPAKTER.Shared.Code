@@ -2,7 +2,9 @@ const loginCases = {
     NEWUSER: "NEWUSER",
     FAILEDLOGIN: "FAILEDLOGIN",
     INCORRECTPASSWORD: "INCORRECTPASSWORD",
-    SUCCESS: "SUCCESS"
+    SUCCESS: "SUCCESS",
+    GOOGLE: "GOOGLE",
+    DIRECT: "DIRECT"
 }
 
 const signupCases = {
