@@ -8,11 +8,12 @@ Create table articles
     sourceID int NOT NULL,
     orgID int NOT NULL,
     categoryID tinyint NOT NULL,
+    title text,
     summary  text,
     content text,
     keywords text,
-    timestampp datetime,
-    articleImage varchar(1000),
+    timestamp datetime,
+    image varchar(1000),
     relevance tinyint
 );
 
