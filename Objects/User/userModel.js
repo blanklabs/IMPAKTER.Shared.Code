@@ -1,6 +1,6 @@
 
 
-export default class signupModel {
+export default class userModel {
     user = {}
     details = {
         company: "",
