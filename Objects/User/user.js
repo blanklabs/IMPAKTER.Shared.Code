@@ -6,6 +6,8 @@ export default class User {
     email = null
     password = null
     orgID = null
+    orgName = ""
+    roleName = ""
 }
 
 //module.exports = User

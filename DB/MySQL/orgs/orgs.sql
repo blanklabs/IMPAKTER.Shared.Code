@@ -72,3 +72,8 @@ Create table org_industry
 );
 
 
+
+
+SELECT * from organizations.orgs where orgID = 6
+
+update orgs set logo = "https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/756368/Copy_20of_20impakter_20logo_201_20android.jpg" where orgID = 6

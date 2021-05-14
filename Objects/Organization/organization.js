@@ -1,4 +1,4 @@
-export default class organizationModel {
+export default class Organization {
     name = ""
     organizationID = null
     accessToken = ""
