@@ -2,7 +2,7 @@ Use indexCertificates;
 drop table if exists certificates;
 Create table certificates
 (
-    certificateID    int   NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    certificateID    int PRIMARY KEY AUTO_INCREMENT,
     name  varchar(200) NOT NULL,
     organizationID varchar(200) NOT NULL,
     description  text,
@@ -15,7 +15,8 @@ Create table certificates
     goal varchar(100),
     specificity text,
     pricing text,
-    sdgEngagement text
+    sdgEngagement text,
+    status tinyint DEFAULT 0
 );
 
 

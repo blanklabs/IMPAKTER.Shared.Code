@@ -11,32 +11,32 @@ const industries = require("../../Constants/industries");
 */
 
 export default class certificateModel {
-        mode = ""
-        certificateID = null
-        organizationID = null
-        name = ""
-        description = ""
-        priority = null
-        applicationLength = ""
-        imagePath = ""
-        difficulty = null
-        relevance = null
-        validity = null
-        region = null
-        countries = []
-        goal = null
-        rating = "P3"
-        pricing = ""
-        sdgEngagement = ""
-        sdgs = []
-        sdgTargets = []
-        industries = []
-        industrySectors = []
-        activeStatus = true
-        computedPriority = null
-        computedSdgs = []
-        computedIndustries = []
-        documents = null
+    mode = ""
+    certificateID = null
+    organizationID = null
+    name = ""
+    description = ""
+    priority = null
+    applicationLength = ""
+    imagePath = ""
+    difficulty = null
+    relevance = null
+    validity = null
+    region = null
+    countries = []
+    goal = null
+    rating = "P3"
+    pricing = ""
+    sdgEngagement = ""
+    sdgs = []
+    sdgTargets = []
+    industries = []
+    industrySectors = []
+    status = 0
+    computedPriority = null
+    computedSdgs = []
+    computedIndustries = []
+    documents = null
 
     setOrganizationID(id) {
         this.organizationID = id
@@ -51,7 +51,7 @@ export default class certificateModel {
                 organizationID: this.organizationID,
                 description: this.description,
                 priority: this.priority,
-                activeStatus: this.activeStatus,
+                status: this.status,
                 sdgEngagement: this.sdgEngagement,
                 applicationLength: this.applicationLength,
                 difficulty: this.difficulty,
@@ -76,7 +76,7 @@ export default class certificateModel {
                 pricing: this.pricing
             },
             computedDetails: {
-                computedActiveStatus: this.computedActiveStatus,
+                computedstatus: this.computedstatus,
                 computedSdgs: this.computedSdgs
             }
         }
@@ -92,7 +92,7 @@ export default class certificateModel {
         this.description = certificateResponseObj.details.description
         this.priority = certificateResponseObj.details.priority
         this.sdgEngagement = certificateResponseObj.details.sdgEngagement
-        this.activeStatus = compute.convertFromBool(certificateResponseObj.details.activeStatus)
+        this.status = certificateResponseObj.details.status
         this.relevance = certificateResponseObj.details.relevance
         this.validity = certificateResponseObj.details.validity
         this.goal = certificateResponseObj.details.goal

@@ -3,7 +3,7 @@ drop table if exists sources;
 Create table sources
 (
     sourceID  Int  PRIMARY KEY AUTO_INCREMENT,
-    name varchar(100),
+    name varchar(500),
     url  varchar(1000) NOT NULL,
     countryID char(2),
     typeID tinyint,

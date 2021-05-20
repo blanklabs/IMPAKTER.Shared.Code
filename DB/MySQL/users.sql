@@ -1,5 +1,9 @@
 use users;
 
+
+
+
+
 DELIMITER $$
 drop PROCEDURE if exists `spFetchUser`;
 create procedure `spFetchUser`(IN INemail VARCHAR(100))
@@ -44,3 +48,6 @@ insert into userRoles (name) values ("Admin"),("Employee"), ("Engineer")
 
 
 CALL spFetchUser(4)
+
+
+insert into users.users (email,firstName,lastName,password) values ("sar54@impakter.com","sss","sss","ss")

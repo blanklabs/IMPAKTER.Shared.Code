@@ -22,3 +22,12 @@ insert into orgs (accessToken,name) Values ("WQWPERREHFLDSSGDLG","BON SUCRO");
 insert into orgs (accessToken,name) Values ("EOIRWINSDFSDFDSPEW","Forest Stewardship Council");
 
 select * from orgs;
+
+
+update certificates set organizationID = 6
+
+
+insert into certificates (name,organizationID) values ("Chain of Custody",6);
+insert into certificates (name,organizationID,status) values ("Pesticide Free",6,1);
+insert into certificates (name,organizationID,status) values ("Creulty Free",6,2);
+insert into certificates (name,organizationID,status) values ("B Corp",6,1);

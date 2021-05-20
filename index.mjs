@@ -11,7 +11,8 @@ import { Transport, transportCodes } from "./Objects/Transport.js"
 import User from "./Objects/User/user.js"
 import { loginCases, signupCases, updateCases } from "./Objects/User/account.js"
 import userModel from "./Objects/User/userModel.js"
+import newsArticle from "./Objects/News/article.js"
 
 //import email from "./Utilities/email.js"
 
-export { certificateModel, organizationModel, Transport, transportCodes, User, loginCases, signupCases, updateCases, userModel }
+export { certificateModel, organizationModel, Transport, transportCodes, User, loginCases, signupCases, updateCases, userModel, newsArticle }
