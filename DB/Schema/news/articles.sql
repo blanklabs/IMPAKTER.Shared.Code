@@ -11,9 +11,9 @@ Create table articles
     content text,
     contentHash text,
     keywords text,
-    timestamp datetime,
+    TS datetime,
     parsedDate varchar(300),
-    image varchar(1000),
+    imageUrl varchar(1000),
     relevance tinyint
 );
 
@@ -44,28 +44,6 @@ Create table article_category
     articleID    varchar(100),
     categoryID tinyint
 
-);
-
-
-
-
-
-Use news;
-drop table if exists articles;
-Create table articles
-(
-    articleID    varchar(100) PRIMARY KEY,
-    url  varchar(1000) NOT NULL,
-    sourceID int,
-    title text,
-    summary  text,
-    content text,
-    contentHash text,
-    keywords text,
-    timestamp datetime,
-    parsedDate varchar(300),
-    image varchar(1000),
-    relevance tinyint
 );
 
 

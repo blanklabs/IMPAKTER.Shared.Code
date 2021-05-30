@@ -1,10 +1,10 @@
-Use indexCertificates;
+Use `index`;
 drop table if exists certificates;
 Create table certificates
 (
     certificateID    int PRIMARY KEY AUTO_INCREMENT,
     name  varchar(200) NOT NULL,
-    organizationID varchar(200) NOT NULL,
+    orgID int NOT NULL,
     description  text,
     logoPath varchar(200),
     applicationLength text,
@@ -15,9 +15,27 @@ Create table certificates
     goal varchar(100),
     specificity text,
     pricing text,
-    sdgEngagement text,
+    sdgEngagementID tinyint,
+    sdgEngagementOther text,
     status tinyint DEFAULT 0
 );
+
+
+
+drop table if exists certificateStatus;
+Create table certificateStatus
+(
+    certificateID    int NOT NULL,
+    status tinyint DEFAULT 0,
+    submissionTS datetime,
+    submittedUserID int,
+    lastEditiedTS datetime,
+    lastEditedUserID int,
+    publishedTS datetime,
+    publishedEmpID int
+
+);
+
 
 
 drop table if exists certificate_region;

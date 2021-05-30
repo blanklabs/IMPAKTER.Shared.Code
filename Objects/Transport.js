@@ -18,5 +18,14 @@ const transportCodes = {
     DEFAULT: null
 }
 
+const generalCases = {
+    SUCCESS: "SUCCESS",
+    FAILED: "FAILED",
+    INTERNALERROR: "INTERNALERROR"
+}
+
+
+
+
 //module.exports = {Transport, codes }
-export { Transport, transportCodes }
+export { Transport, transportCodes, generalCases }

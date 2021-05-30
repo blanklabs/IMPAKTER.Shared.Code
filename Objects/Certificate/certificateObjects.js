@@ -1,5 +1,5 @@
-export class documentObject {
-documentName= null
-documentUrl= null
-languageName = null
-} 
+export class document {
+    documentName = null
+    documentUrl = null
+    languageName = null
+}
