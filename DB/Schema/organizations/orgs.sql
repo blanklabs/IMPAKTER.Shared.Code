@@ -102,6 +102,7 @@ Create table org_industrySector
 (
     orgID    int NOT NULL,
     industrySectorID int not null
+    
 
 );
 

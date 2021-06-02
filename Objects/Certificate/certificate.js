@@ -12,7 +12,7 @@ export default class certificate {
     goal = null
     specificity = ""
     pricing = ""
-    sdgEngagement = ""
+    sdgEngagementID = ""
     sdgEngagementOther = ""
     status = ""
 }

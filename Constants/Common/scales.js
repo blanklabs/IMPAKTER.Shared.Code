@@ -1,24 +1,24 @@
-const rating = [
+const threeScale = [
     {
-        "ratingID": "P1",
+        text: "Select One",
+        value: null
+    },
+    {
         value: 0,
-        text: "P1",
+        text: "Low",
         "description": "",
     },
     {
-        "ratingID": "P2",
         value: 1,
-        text: "P2",
+        text: "Medium",
         "description": "",
     },
     {
-        "ratingID": "P3",
         value: 2,
-        text: "P3",
+        text: "High",
         "description": "",
     }
 
 ]
 
-
-export { rating }
+export { threeScale }

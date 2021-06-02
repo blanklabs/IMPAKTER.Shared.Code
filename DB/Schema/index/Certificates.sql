@@ -88,3 +88,13 @@ Create table certificate_sdgTarget
 );
 
 
+drop table if exists certificate_document;
+Create table certificate_document
+(
+    certificateID    int NOT NULL,
+    name varchar(500) not null,
+    url varchar(100),
+    language char(2)
+ 
+);
+

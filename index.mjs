@@ -6,7 +6,8 @@ module.exports = {certificateModel, organizationModel}
 */
 
 import organizationModel from "./Objects/Organization/organization.js";
-import certificateModel from "./Objects/Certificate/certificate.js";
+import certificateObject from "./Objects/Certificate/certificateObject.js";
+import { certificateCases } from "./Objects/Certificate/certificateObjects.js";
 import { Transport, transportCodes, generalCases } from "./Objects/Transport.js"
 import User from "./Objects/User/user.js"
 import { loginCases, signupCases, updateCases } from "./Objects/User/account.js"
@@ -15,4 +16,4 @@ import newsArticle from "./Objects/News/article.js"
 
 //import email from "./Utilities/email.js"
 
-export { certificateModel, organizationModel, Transport, transportCodes, User, loginCases, signupCases, updateCases, userModel, newsArticle, generalCases }
+export { certificateObject, organizationModel, Transport, transportCodes, User, loginCases, signupCases, updateCases, userModel, newsArticle, generalCases, certificateCases }

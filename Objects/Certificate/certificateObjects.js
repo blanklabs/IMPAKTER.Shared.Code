@@ -1,5 +1,12 @@
-export class document {
-    documentName = null
-    documentUrl = null
-    languageName = null
+class document {
+    name = null
+    url = null
+    language = null
 }
+
+const certificateCases = {
+    NEW: "NEW",
+    UPDATE: "UPDATE"
+}
+
+export { document, certificateCases }
