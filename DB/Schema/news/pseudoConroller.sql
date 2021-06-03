@@ -23,3 +23,13 @@ alter articlesTemp add COLUMN title VARCHAR(250) after articleID;
 
 update articlesTemp set image = "https://i.stack.imgur.com/y9DpT.jpg"
 update articlesTemp set title = "Title of the article"
+
+
+
+
+update sources set credibility = 0
+
+#forbes
+update sources set credibility = 1 where sourceID in (46,1073)
+
+select * from sources order by name
