@@ -5,7 +5,7 @@ let certificateModel = require("./Objects/Certificate/certificate");
 module.exports = {certificateModel, organizationModel}
 */
 
-import organizationModel from "./Objects/Organization/organization.js";
+import OrganizationModel from "./Objects/Organization/organizationModel.js";
 import certificateObject from "./Objects/Certificate/certificateObject.js";
 import { certificateCases } from "./Objects/Certificate/certificateObjects.js";
 import { Transport, transportCodes, generalCases } from "./Objects/Transport.js"
@@ -16,4 +16,4 @@ import newsArticle from "./Objects/News/article.js"
 
 //import email from "./Utilities/email.js"
 
-export { certificateObject, organizationModel, Transport, transportCodes, User, loginCases, signupCases, updateCases, userModel, newsArticle, generalCases, certificateCases }
+export { certificateObject, OrganizationModel, Transport, transportCodes, User, loginCases, signupCases, updateCases, userModel, newsArticle, generalCases, certificateCases }

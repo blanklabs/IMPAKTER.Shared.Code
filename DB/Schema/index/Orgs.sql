@@ -45,3 +45,13 @@ TS datetime
 );
 
 
+Use `index`;
+drop table if exists org_sdg;
+Create table org_sdg
+(
+    orgID    int NOT NULL,
+    sdgID tinyint not null
+
+);
+
+

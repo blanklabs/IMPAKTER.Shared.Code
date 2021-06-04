@@ -33,3 +33,5 @@ insert into certificate_industry values (3,'C');
 
 
 insert into certificate_document values (3,'Certificate Procedure','https://impakter.com','en');
+
+insert into org_sdg values (6,3),(6,5)

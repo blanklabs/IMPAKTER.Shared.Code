@@ -1,31 +1,11 @@
 export default class Organization {
     name = ""
     orgID = null
-    accessToken = ""
-    industries = []
-    countryID = null
     url = ""
+    type = ""
     description = "NA"
-    email = ""
-    phone = ""
-    logo = ""
-    revenue = ""
-    ticker = ""
-    stockMarket = ""
-    twitterUrl = ""
-    facebookUrl = ""
-    instagramUrl = ""
-
-
-
-
-    map(organizationResponseObj) {
-        this.name = organizationResponseObj.name
-        this.organizationID = organizationResponseObj.organizationID
-        this.accessToken = organizationResponseObj.organizationID
-        this.website = organizationResponseObj.website
-    }
-
+    longDescription = "NA"
+    logoUrl = ""
 }
 
 
