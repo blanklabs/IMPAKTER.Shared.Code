@@ -1,22 +1,7 @@
-export default class NewsArticle {
-    articleID = ""
-    url = ""
-    sourceID = ""
-    orgID = ""
-    categoryID = ""
-    title = ""
-    summary = ""
-    content = ""
-    keywords = null
-    timestamp = null
-    image = ""
-    relevance = null
-    details = new articleDetails()
-}
+import { Article } from "./articleObjects.js";
+import { Source } from "./sourceObjects.js";
 
-
-class articleDetails {
-    sourceName = ""
-    categoryName = ""
-    date = ""
+export default class ArticleObject {
+    article = new Article()
+    source = new Source()
 }

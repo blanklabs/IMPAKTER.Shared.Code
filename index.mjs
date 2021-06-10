@@ -1,19 +1,19 @@
 /*
-let organizationModel = require("./Objects/Organization/organization");
-let certificateModel = require("./Objects/Certificate/certificate");
+let organizationObject = require("./Objects/Organization/organization");
+let certificateObject = require("./Objects/Certificate/certificate");
 
-module.exports = {certificateModel, organizationModel}
+module.exports = {certificateObject, organizationObject}
 */
 
-import OrganizationModel from "./Objects/Organization/organizationModel.js";
-import certificateObject from "./Objects/Certificate/certificateObject.js";
-import { certificateCases } from "./Objects/Certificate/certificateObjects.js";
-import { Transport, transportCodes, generalCases } from "./Objects/Transport.js"
-import User from "./Objects/User/user.js"
-import { loginCases, signupCases, updateCases } from "./Objects/User/account.js"
-import userModel from "./Objects/User/userModel.js"
-import newsArticle from "./Objects/News/article.js"
+import OrganizationObject from "./Objects/Organization/organization.js";
+import CertificateObject from "./Objects/Certificate/certificate.js";
+import UserObject from "./Objects/User/user.js"
+import ArticleObject from "./Objects/News/article.js"
+import { User } from "./Objects/User/userObjects.js"
+import { Transport, transportCodes, generalCases } from "./Constants/Transport.js"
+import { loginCases, signupCases, updateCases } from "./Constants/Cases/account.js"
+import { certificateCases, organizationCases } from "./Constants/Cases/cases.js"
 
 //import email from "./Utilities/email.js"
 
-export { certificateObject, OrganizationModel, Transport, transportCodes, User, loginCases, signupCases, updateCases, userModel, newsArticle, generalCases, certificateCases }
+export { CertificateObject, OrganizationObject, ArticleObject, User, Transport, transportCodes, UserObject, loginCases, signupCases, updateCases, generalCases, certificateCases }

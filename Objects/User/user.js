@@ -1,13 +1,9 @@
-export default class User {
-    userID = null
-    firstName = ""
-    lastName = ""
-    roleID = null
-    email = null
-    password = null
-    orgID = null
-    orgName = ""
-    roleName = ""
-}
+import { Organization } from "../Organization/organizationObjects.js"
+import { User, UserInformation } from "./userObjects.js"
 
-//module.exports = User
+
+export default class UserObject {
+    user = new User()
+    userInformation = new UserInformation()
+    organization = new Organization()
+}

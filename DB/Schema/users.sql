@@ -1,53 +1,37 @@
 use users;
 
+drop table if exists users;
+Create table users
+(
+    userID int primary key AUTO_INCREMENT,
+    firstName varchar(200),
+    lastName varchar(200),
+    email VARCHAR(200),
+    `password` VARCHAR(1000),
+    roleID tinyint DEFAULT 1,
+    orgID int DEFAULT 1
+);
 
 
 
+drop table if exists userInformation;
+Create table userInformation
+(
+    userID int,
+    roleInOrg varchar(200)
 
-DELIMITER $$
-drop PROCEDURE if exists `spFetchUser`;
-create procedure `spFetchUser`(IN INemail VARCHAR(100))
-BEGIN
-select u.userID,u.firstName,u.lastName,u.email,u.`password`,u.roleID,u.orgID,ur.`name` as roleName, o.name as orgName from users.users u JOIN users.userRoles ur on ur.roleID = u.roleID JOIN organizations.orgs o on o.orgID = u.orgID where u.email = INemail;
-END$$
-
-DELIMITER ;
+);
 
 
 
-use users;
-
-DELIMITER $$
-drop PROCEDURE if exists `spAddUser`;
-create procedure `spAddUser`(
-IN INfirstName VARCHAR(100),
-IN INlastName VARCHAR(100),
-IN INemail VARCHAR(100),
-IN INpassword VARCHAR(500),
-IN INroleID tinyint,
-IN INorgID int)
-BEGIN
-INSERT into users.users values (INfirstName,INlastName,INemail,INpassword,INroleID,INorgID);
-
-END$$
-
-DELIMITER ;
+drop table if exists userRoles;
+Create table userRoles
+(
+    roleID int primary key AUTO_INCREMENT,
+    name varchar(200)
+);
 
 
 
 
 
-
-select * from userRoles
-
-update users set roleID = 2
-update users set orgID = 6
-
-
-insert into userRoles (name) values ("Admin"),("Employee"), ("Engineer")
-
-
-CALL spFetchUser(4)
-
-
-insert into users.users (email,firstName,lastName,password) values ("sar54@impakter.com","sss","sss","ss")

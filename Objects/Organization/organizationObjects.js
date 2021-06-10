@@ -1,4 +1,15 @@
 
+class Organization {
+    name = ""
+    orgID = null
+    url = ""
+    type = ""
+    description = "NA"
+    longDescription = "NA"
+    logoUrl = ""
+}
+
+
 class OrgCommunication {
     email = ""
     phone = ""
@@ -25,9 +36,6 @@ class OrgDocument {
     url = null
     language = null
 }
-const organizationCases = {
-    NEW: "NEW",
-    UPDATE: "UPDATE"
-}
 
-export { organizationCases, OrgCommunication, OrgFinancial, OrgSustainability, OrgDocument }
+
+export { Organization, OrgCommunication, OrgFinancial, OrgSustainability, OrgDocument }
