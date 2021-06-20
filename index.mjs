@@ -13,7 +13,8 @@ import { User } from "./Objects/User/userObjects.js"
 import { Transport, transportCodes, generalCases } from "./Constants/Transport.js"
 import { loginCases, signupCases, updateCases } from "./Constants/Cases/account.js"
 import { certificateCases, organizationCases } from "./Constants/Cases/cases.js"
+import { orgTypes } from "./Constants/Orgs/orgTypes.js"
 
 //import email from "./Utilities/email.js"
 
-export { CertificateObject, OrganizationObject, ArticleObject, User, Transport, transportCodes, UserObject, loginCases, signupCases, updateCases, generalCases, certificateCases }
+export { CertificateObject, OrganizationObject, ArticleObject, User, Transport, transportCodes, UserObject, loginCases, signupCases, updateCases, generalCases, certificateCases, orgTypes }

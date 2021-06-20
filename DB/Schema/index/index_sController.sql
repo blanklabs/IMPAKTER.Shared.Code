@@ -16,7 +16,7 @@ select * from indexCertificates.certificateOrganizations;
 
 
 
-update certificates set organizationID = 6
+update certificates set orgID = 1
 
 
 use `index`;

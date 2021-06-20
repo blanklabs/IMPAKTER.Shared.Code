@@ -1,5 +1,5 @@
-import { Organization } from "../Organization/organizationObjects.js"
-import { User, UserInformation } from "./userObjects.js"
+import {Organization} from "../Organization/organizationObjects.js"
+import {User, UserInformation} from "./userObjects.js"
 
 
 export default class UserObject {

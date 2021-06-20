@@ -8,6 +8,7 @@ const loginCases = {
 }
 
 const signupCases = {
+    NEWUSER: "NEWUSER",
     EXISTING: "EXISTING",
     SUCCESS: "SUCCESS",
     FAILED: "FAILED"
